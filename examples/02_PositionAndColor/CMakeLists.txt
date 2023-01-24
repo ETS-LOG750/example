@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
-project(PositionAndColor)
+project(02_PositionAndColor)
 
 # Add source files
 SET(SOURCE_FILES 
