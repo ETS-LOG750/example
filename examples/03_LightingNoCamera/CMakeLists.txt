@@ -1,14 +1,18 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
-project(01_imGUIDemo)
+project(03_LightingNoCamera)
 
 # Add source files
 SET(SOURCE_FILES 
 	Main.cpp
-	Mainwindow.cpp
-	
-)
+	Mainwindow.cpp)
 set(HEADER_FILES 
 	MainWindow.h)
+set(SHADER_FILES 
+	gouraud-shading.vert
+	gouraud-shading.frag
+	phong-shading.vert
+	phong-shading.frag
+)
 
 # Define the executable
 add_executable(${PROJECT_NAME} ${HEADER_FILES} ${SOURCE_FILES} ${SHADER_FILES} ${SHARED_FILES})

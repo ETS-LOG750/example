@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
-project(imGUIExample)
+project(01_imGUIExample)
 
 # Add source files
 SET(SOURCE_FILES 

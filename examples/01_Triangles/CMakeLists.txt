@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
-project(Triangles)
+project(01_Triangles)
 
 # Add source files
 SET(SOURCE_FILES 

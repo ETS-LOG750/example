@@ -12,4 +12,6 @@ add_subdirectory(01_imGUIDemo)
 add_subdirectory(01_Triangles)
 # - color (uniform, vertex attribute, blending)
 add_subdirectory(02_PositionAndColor)
+# - example lighting cylinder with directional light
+add_subdirectory(03_LightingNoCamera)
 
