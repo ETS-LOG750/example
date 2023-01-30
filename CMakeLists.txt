@@ -5,6 +5,10 @@ project(ETS-LOG750)
 # LOOK for the packages that we need! #
 #######################################
 
+if (APPLE)
+    set (CMAKE_CXX_FLAGS "-std=c++17")
+endif()
+
 # GLM: Math library
 include_directories(3rdparty/glm)
 add_subdirectory(3rdparty/glm)
