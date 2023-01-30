@@ -35,9 +35,9 @@ main()
     if (cosTheta > 0.0)
     {
         // Compute specular (phong)
-        vec3 r = reflect(-EyeDir, nNormal);
+        vec3 r = reflect(-LightDir, nNormal);
         // Note: max here is to clamp the lobe if it is below the surface
-        float specular = pow(max(0.0, dot(LightDir, r)), n);
+        float specular = pow(max(0.0, dot(EyeDir, r)), n);
 
         // Compute the material model (specular + diffuse)
         oColor = vec4(vec3(kd * cosTheta + ks * specular), 1.0);

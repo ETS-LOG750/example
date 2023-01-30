@@ -20,8 +20,8 @@ main()
     float diffuse = dot(nNormal, LightDirection);
     if (diffuse > 0.0)
     {
-        vec3 r = reflect(-EyeDirection, nNormal);
-        float specular = pow(max(0.0, dot(LightDirection, r)), n);
+        vec3 r = reflect(-LightDirection, nNormal);
+        float specular = pow(max(0.0, dot(EyeDirection, r)), n);
         fColor = vec3(kd * diffuse + ks * specular);
     }
     else
