@@ -16,4 +16,6 @@ add_subdirectory(02_PositionAndColor)
 add_subdirectory(03_LightingNoCamera)
 # - simple example of different transformation
 add_subdirectory(04_Transformation)
+# - example animation and rotations
+add_subdirectory(04_Animation)
 
