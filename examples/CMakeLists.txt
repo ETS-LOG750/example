@@ -14,4 +14,6 @@ add_subdirectory(01_Triangles)
 add_subdirectory(02_PositionAndColor)
 # - example lighting cylinder with directional light
 add_subdirectory(03_LightingNoCamera)
+# - simple example of different transformation
+add_subdirectory(04_Transformation)
 
