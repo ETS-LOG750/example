@@ -46,10 +46,6 @@ private:
 	glm::vec3 m_rot;
 	// - scale and translation
 	glm::vec3 m_scale,m_translate;
-	
-	// Camera
-	glm::vec3 m_eye, m_at, m_up;
-	glm::mat4 m_proj;
 
 	enum VAO_IDs { Triangles, NumVAOs };
 	enum Buffer_IDs { ArrayBuffer, NumBuffers };
