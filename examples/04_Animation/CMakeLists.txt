@@ -5,10 +5,9 @@ project(04_Animation)
 SET(SOURCE_FILES 
 	Main.cpp
 	MainWindow.cpp
-	OBJLoader.cpp)
+)
 set(HEADER_FILES 
 	MainWindow.h
-	OBJLoader.h
 )
 set(SHADER_FILES 
 	triangles.vert

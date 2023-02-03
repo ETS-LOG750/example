@@ -1,7 +1,10 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/shared)
 set(SHARED_FILES 
     ${CMAKE_CURRENT_SOURCE_DIR}/shared/ShaderProgram.cpp 
-    ${CMAKE_CURRENT_SOURCE_DIR}/shared/ShaderProgram.h)
+    ${CMAKE_CURRENT_SOURCE_DIR}/shared/ShaderProgram.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/shared/OBJLoader.cpp 
+    ${CMAKE_CURRENT_SOURCE_DIR}/shared/OBJLoader.h
+)
 
 
 # Seance 01: Introduction

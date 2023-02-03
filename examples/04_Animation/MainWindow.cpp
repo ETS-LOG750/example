@@ -12,7 +12,7 @@
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/euler_angles.hpp>
 
-#include "OBJLoader.h"
+#include "OBJLoader.h" // Inside "../shared/"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 

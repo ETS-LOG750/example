@@ -1,5 +1,5 @@
 #version 400 core
-uniform vec4 uColor;
+
 out vec4 fColor;
 
 in vec3 fNormal;
