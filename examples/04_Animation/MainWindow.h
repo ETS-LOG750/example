@@ -38,7 +38,7 @@ private:
 private:
 	// settings
 	const unsigned int SCR_WIDTH = 900;
-	const unsigned int SCR_HEIGHT = 720;
+	const unsigned int SCR_HEIGHT = 900;
 	GLFWwindow* m_window = nullptr;
 
 	// Transformations
