@@ -21,4 +21,10 @@ add_subdirectory(03_LightingNoCamera)
 add_subdirectory(04_Transformation)
 # - example animation and rotations
 add_subdirectory(04_Animation)
+# - example (simple) de differentes facon de dessiner un rectangle
+add_subdirectory(05_DrawSquares)
+# - example geometry shaders (normal computation at each vertices)
+add_subdirectory(05_GeometryShader)
+# - example tesselation (Bezier surfaces)
+add_subdirectory(05_TesselationTeapot)
 
