@@ -27,4 +27,6 @@ add_subdirectory(05_DrawSquares)
 add_subdirectory(05_GeometryShader)
 # - example tesselation (Bezier surfaces)
 add_subdirectory(05_TesselationTeapot)
+# - lab 2 obj loading example
+add_subdirectory(Lab_2_ObjLoader)
 
