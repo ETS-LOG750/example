@@ -9,20 +9,6 @@
 
 #include "ShaderProgram.h"
 
-// Conversion functions uvec4 <-> uint32_t
-inline glm::uvec4 GetRGBA(uint32_t PackedUint) {
-	unsigned int blue = PackedUint & 255;
-	unsigned int green = (PackedUint >> 8) & 255;
-	unsigned int red = (PackedUint >> 16) & 255;
-	unsigned int alpha = (PackedUint >> 24) & 255;
-
-	return glm::uvec4(red, green, blue, alpha);
-}
-inline uint32_t GetIntFromRGBA(glm::uvec4& RGBA)
-{
-	return (RGBA.a << 24) + (RGBA.r << 16) + (RGBA.g << 8) + RGBA.b;
-}
-
 class MainWindow
 {
 public:
@@ -77,8 +63,5 @@ private:
 
 	// Picking parameters
 	int m_selectedSpiral = -1;
-	//  - ray drawing from the picking point
-	glm::vec3 SelectedPoint;
-	glm::vec3 SelectRayOrigin;
-	glm::vec3 SelectRayRotAxis;
+
 };

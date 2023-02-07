@@ -4,8 +4,7 @@ uniform mat4 projMatrix;
 
 in vec4 vPosition;
 
-void
-main()
+void main()
 {
   gl_Position = projMatrix * mvMatrix * vPosition;
 }
