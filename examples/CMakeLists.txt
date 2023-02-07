@@ -29,4 +29,6 @@ add_subdirectory(05_GeometryShader)
 add_subdirectory(05_TesselationTeapot)
 # - lab 2 obj loading example
 add_subdirectory(Lab_2_ObjLoader)
+# - lab 2 picking
+add_subdirectory(Lab_2_Picking)
 
