@@ -8,6 +8,7 @@
 #include <memory>
 
 #include "ShaderProgram.h"
+#include "Camera.h"
 
 class MainWindow
 {
@@ -21,6 +22,7 @@ public:
 	// Callback to intersept GLFW calls
 	void FramebufferSizeCallback(int width, int height);
 	void MouseButtonCallback(int button, int action, int mods);
+	void CursorPositionCallback(double xpos, double ypos);
 
 private:
 	// Initialize GLFW callbacks
@@ -46,16 +48,15 @@ private:
 	// GLFW Window
 	GLFWwindow* m_window = nullptr;
 
+	// Camera
+	Camera m_camera;
+
 	// VAOs and VBOs
-	enum VAO_IDs { VAO_Spiral, VAO_SpiralSelected, VAO_SpiralPicking, NumVAOs };
-	enum Buffer_IDs { VBO_Spiral, NumBuffers };
+	enum VAO_IDs { VAO_Spiral, VAO_SpiralSelected, VAO_SpiralPicking, VAO_Ray, NumVAOs };
+	enum Buffer_IDs { VBO_Spiral, VBO_Ray, NumBuffers };
 
 	GLuint m_VAOs[NumVAOs];
 	GLuint m_buffers[NumBuffers];
-
-	// Camera
-	glm::mat4 m_projectionMatrix = glm::mat4(1.0);
-	glm::mat4 m_modelViewMatrix = glm::mat4(1.0);
 	
 	// Render shaders & locations
 	std::unique_ptr<ShaderProgram> m_mainShader = nullptr;
@@ -63,5 +64,5 @@ private:
 
 	// Picking parameters
 	int m_selectedSpiral = -1;
-
+	glm::vec3 m_point = glm::vec3(0.0);
 };

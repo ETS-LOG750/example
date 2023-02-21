@@ -4,6 +4,8 @@ set(SHARED_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/shared/ShaderProgram.h
     ${CMAKE_CURRENT_SOURCE_DIR}/shared/OBJLoader.cpp 
     ${CMAKE_CURRENT_SOURCE_DIR}/shared/OBJLoader.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/shared/Camera.cpp 
+    ${CMAKE_CURRENT_SOURCE_DIR}/shared/Camera.h
 )
 
 
@@ -27,6 +29,8 @@ add_subdirectory(05_DrawSquares)
 add_subdirectory(05_GeometryShader)
 # - example tesselation (Bezier surfaces)
 add_subdirectory(05_TesselationTeapot)
+# - example utilisation unproject
+add_subdirectory(06_Unproject)
 # - lab 2 obj loading example
 add_subdirectory(Lab_2_ObjLoader)
 # - lab 2 picking
